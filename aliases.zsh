@@ -12,9 +12,12 @@ alias version="commit 'version'"
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
-alias lara="sites && cd laravel/"
-alias docs="lara && cd docs/"
+alias code="cd $HOME/code"
+alias mobile="cd $HOME/code/mobile"
+alias web="cd $HOME/code/web"
+alias sdk="cd $HOME/code/js-sdk"
+alias site="cd $HOME/code/site"
+alias handbook="cd $HOME/code/handbook"
 
 # Laravel
 alias a="php artisan"
@@ -54,3 +57,7 @@ alias resolve="git add . && git commit --no-edit"
 alias stash="git stash -u"
 alias unstage="git restore --staged ."
 alias wip="commit wip"
+
+# command aliases
+alias ciy='composer install && yarn'
+alias mfs='php artisan migrate:fresh --seed'
